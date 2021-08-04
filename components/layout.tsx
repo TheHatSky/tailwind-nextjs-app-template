@@ -1,11 +1,12 @@
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
+import { FC } from "react";
 
 const name = "[Your Name]";
 export const siteTitle = "Next.js Sample Website";
 
-export default function Layout({ children, home }: { children: React.ReactNode; home?: boolean }) {
+export const Layout: FC<{ home?: boolean }> = ({ children, home }) => {
   return (
     <div className="container max-w-xl px-4 mt-12 mx-auto mb-24">
       <Head>
@@ -51,4 +52,4 @@ export default function Layout({ children, home }: { children: React.ReactNode; 
       )}
     </div>
   );
-}
+};
