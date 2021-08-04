@@ -1,1 +1,12 @@
+.eslintignore
+.eslintrc.json
+.gitignore
+.prettierrc.json
+LICENSE
+next-env.d.ts
+package.json
+postcss.config.js
+README.md
+tailwind.config.js
+tsconfig.json
 yarn.lock
